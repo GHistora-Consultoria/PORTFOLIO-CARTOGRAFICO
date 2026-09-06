@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ghistora-consultoria.github.io/PORTFOLIO-CARTOGRAFICO/sitemap.xml
