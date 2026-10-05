@@ -172,19 +172,19 @@
 <div style="max-width: 200px; margin: 8px auto 0; text-align: center; color: #c3aa7c; font-size: 20px;">❦</div>
 
 <section id="teledeteccion" style="max-width: 1100px; margin: 0 auto; padding: 36px 24px;">
-  <h2 class="rd-h2" style="font-size: 30px; margin: 0 0 4px;">Teledetección: qué cambió entre 2018 y 2026</h2>
+  <h2 class="rd-h2" style="font-size: 30px; margin: 0 0 4px;">Teledetección: señales de cambio entre 2018 y 2026</h2>
   <div style="width: 60px; height: 1px; background: #c3aa7c; margin: 0 0 20px;"></div>
-  <p>Para medir el cambio real sobre el terreno comparé dos fechas de imágenes Sentinel-2, 2018 y 2026, con cuatro índices espectrales: vegetación (NDVI), humedad (NDWI), suelo construido (NDBI) y severidad de quemas (NBR). En cada caso, un cambio se cuenta como pérdida o ganancia solo si supera un umbral de ±0,15; todo lo que queda dentro de ese margen se considera estable.</p>
+  <p>Para medir el cambio sobre el terreno comparé dos escenas Sentinel-2 de verano, de agosto de 2018 y del verano de 2026, con cuatro índices espectrales: vegetación (NDVI), humedad (NDWI), suelo desnudo o construido (NDBI) y estrés o pérdida de vegetación leñosa (NBR). Un cambio se cuenta solo si supera un umbral de ±0,15; lo que queda dentro de ese margen se considera estable. Lo que sigue son señales detectadas por satélite, no hechos verificados sobre el terreno: indican dónde mirar, no qué ha pasado.</p>
 
   <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Vegetación (NDVI)</h3>
-  <p>El NDVI abre con el dato más duro de los cuatro: casi una quinta parte del territorio, 420,9 hectáreas, perdió cobertura vegetal entre 2018 y 2026, mientras que apenas 37,6 hectáreas la recuperaron. Ocho de cada diez hectáreas del concejo no cambiaron, cierto — pero la pérdida no se reparte al azar: se concentra en la vega y en las laderas pegadas a los núcleos habitados, justo donde vive la gente.</p>
+  <p>Entre las dos escenas, 420,9 hectáreas (casi una quinta parte del concejo) muestran un descenso de NDVI y solo 37,6 un aumento. Ocho de cada diez hectáreas no cambian, pero el descenso no se reparte al azar: se concentra en la vega y en las laderas próximas a los núcleos habitados. Para saber si es un cambio de cobertura o un efecto del año, medí además el NDVI medio en el verano de cada año entre 2018 y 2026 (una escena por año, sobre una ventana rectangular alrededor del concejo): es estable entre 2018 y 2024 (0,78-0,82) y baja en 2025 (0,71) y 2026 (0,73). En primavera, 2025 y 2026 recuperan valores normales (0,80-0,81). Un descenso que aparece solo en verano y no persiste en primavera es más coherente con un verano seco que con una pérdida de cobertura. Es una lectura, no una demostración: confirmarla exige contrastar con precipitación y con ortofoto.</p>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0 6px;">
     <figure style="margin: 0;"><img src="uploads/mapa_ndvi_2018.png" alt="NDVI 2018" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
     <figure style="margin: 0;"><img src="uploads/mapa_ndvi_2026(2).png" alt="NDVI 2026" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
   </div>
   <p class="rd-cap" style="text-align: center; margin: 6px 0 20px; font-size: 15px;">NDVI en 2018 y en 2026, lado a lado.</p>
   <figure style="margin: 24px 0;"><img src="uploads/mapa_cambios_ribera_de_arriba.png" alt="Detección de cambios NDVI" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
-  <p class="rd-cap" style="text-align: center; margin: -12px 0 20px;">Pérdida (roja), estabilidad y regeneración (verde) de NDVI, 2018-2026.</p>
+  <p class="rd-cap" style="text-align: center; margin: -12px 0 20px;">Descenso (rojo), estabilidad y aumento (verde) de NDVI, 2018-2026.</p>
   <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 22px 0 6px;">
     <figure style="margin: 0;"><img src="uploads/histograma_ribera_de_arriba.png" alt="Distribución de cambios NDVI" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
     <figure style="margin: 0;"><img src="uploads/barras_ribera_de_arriba.png" alt="Distribución del cambio de cobertura" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
@@ -193,37 +193,37 @@
   <p class="rd-cap" style="text-align: center; margin: 6px 0 24px; font-size: 15px;">Misma cifra, tres lecturas: distribución de píxeles, superficie por categoría y reparto porcentual.</p>
 
   <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Humedad (NDWI)</h3>
-  <p>Con el agua la fotografía cambia por completo. El NDWI apenas se mueve: 92,6% del territorio estable, y donde hay variación es más ganancia que pérdida. Las pocas líneas rojas que aparecen en el mapa no están dispersas — dibujan, casi calcado, el trazado del río principal.</p>
+  <p>Con la humedad la fotografía cambia por completo. El NDWI apenas se mueve: 92,6% del territorio estable, y donde hay variación es más aumento que descenso. Las pocas líneas rojas que aparecen en el mapa no están dispersas — dibujan, casi calcado, el trazado del río principal.</p>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0 6px;">
     <figure style="margin: 0;"><img src="uploads/mapa_ndwi_2018.png" alt="NDWI 2018" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
     <figure style="margin: 0;"><img src="uploads/mapa_ndwi_2026(2).png" alt="NDWI 2026" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
   </div>
   <p class="rd-cap" style="text-align: center; margin: 6px 0 20px; font-size: 15px;">NDWI en 2018 y en 2026.</p>
   <figure style="margin: 24px 0;"><img src="uploads/mapa_cambios_ndwi_ribera_de_arriba.png" alt="Detección de cambios NDWI" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
-  <p class="rd-cap" style="text-align: center; margin: -12px 0;">Cambios de humedad 2018-2026: 92,6% estable, 6,5% de ganancia.</p>
+  <p class="rd-cap" style="text-align: center; margin: -12px 0;">Cambios de humedad 2018-2026: 92,6% estable, 6,5% de aumento.</p>
 
-  <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Suelo construido (NDBI)</h3>
-  <p>El NDBI cuenta la otra cara del NDVI. Donde la vegetación retrocede, algo avanza: 455 hectáreas de suelo construido nuevo, más de una quinta parte del concejo, frente a una pérdida casi inexistente. El patrón no sorprende — sigue de cerca los ejes viarios, que es donde cualquier núcleo rural crece primero.</p>
+  <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Suelo desnudo o construido (NDBI)</h3>
+  <p>El NDBI marca 455 hectáreas (20,8 %) con valores más altos en 2026. Este índice no distingue por sí solo edificios de suelo desnudo, barbecho o pasto seco, y en esta zona la lectura más probable es la segunda. No lo interpreto como suelo construido nuevo: la verificación pendiente es cruzar la señal con las construcciones del Catastro y con la ortofoto PNOA.</p>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0 6px;">
     <figure style="margin: 0;"><img src="uploads/mapa_ndbi_2018(1).png" alt="NDBI 2018" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
     <figure style="margin: 0;"><img src="uploads/mapa_ndbi_2026(1).png" alt="NDBI 2026" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
   </div>
   <p class="rd-cap" style="text-align: center; margin: 6px 0 20px; font-size: 15px;">NDBI en 2018 y en 2026.</p>
   <figure style="margin: 24px 0;"><img src="uploads/mapa_cambios_ndbi_ribera_de_arriba.png" alt="Detección de cambios NDBI" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
-  <p class="rd-cap" style="text-align: center; margin: -12px 0;">Ganancia de suelo construido, 2018-2026: 20,8% del territorio.</p>
+  <p class="rd-cap" style="text-align: center; margin: -12px 0;">Aumento de NDBI, 2018-2026: 20,8% del territorio (señal sin verificar).</p>
 
-  <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Severidad de quemas (NBR)</h3>
-  <p>El NBR cierra la serie confirmando lo que ya apuntaba el NDVI, y lo hace con el porcentaje más alto de los cuatro: 542 hectáreas, casi una cuarta parte del concejo, con señal de pérdida de vegetación leñosa o de quema. La recuperación, un raquítico 1,8%, no deja lugar a dudas sobre hacia dónde apunta la tendencia.</p>
+  <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Estrés o pérdida de vegetación leñosa (NBR)</h3>
+  <p>El NBR muestra un descenso en 542 hectáreas (24,7 %), el porcentaje más alto de los cuatro, y solo un 1,8 % de aumento. Es un índice sensible al estrés hídrico además de a los incendios, y este análisis no aporta evidencia de quemas: la señal se lee como estrés o pérdida de vegetación leñosa, a contrastar con focos de incendio registrados (NASA FIRMS).</p>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0 6px;">
     <figure style="margin: 0;"><img src="uploads/mapa_nbr_2018.png" alt="NBR 2018" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
     <figure style="margin: 0;"><img src="uploads/mapa_nbr_2026.png" alt="NBR 2026" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
   </div>
   <p class="rd-cap" style="text-align: center; margin: 6px 0 20px; font-size: 15px;">NBR en 2018 y en 2026.</p>
   <figure style="margin: 24px 0;"><img src="uploads/mapa_cambios_nbr_ribera_de_arriba.png" alt="Detección de cambios NBR" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
-  <p class="rd-cap" style="text-align: center; margin: -12px 0 20px;">Pérdida de vegetación/quema, 2018-2026: 24,7% del territorio.</p>
+  <p class="rd-cap" style="text-align: center; margin: -12px 0 20px;">Descenso de NBR, 2018-2026: 24,7% del territorio.</p>
 
   <h3 class="rd-h3" style="font-size: 21px; margin: 30px 0 14px;">Síntesis cruzada</h3>
-  <p>Superpuse los cuatro índices para ver dónde coinciden varias señales de cambio a la vez. En el 78,5% del territorio no coincide ninguna; en el 15,8% coinciden tres de las seis combinaciones evaluadas. Son las zonas donde el cambio no es un artefacto de un solo índice, sino una transformación real y sostenida del terreno.</p>
+  <p>Superpuse los cuatro índices para ver dónde coinciden varias señales de cambio a la vez. En el 78,5% del territorio no coincide ninguna; en el 15,8% coinciden tres de las seis combinaciones evaluadas. Son las zonas donde la señal no depende de un solo índice y que merecen revisión prioritaria sobre el terreno.</p>
   <figure style="margin: 24px 0;"><img src="uploads/mapa_sintesis_cruzada_ribera_de_arriba.png" alt="Síntesis cruzada de índices" style="width: 100%; display: block; border: 1px solid #d9c49a;"></figure>
   <p class="rd-cap" style="text-align: center; margin: -12px 0;">Densidad de coincidencias entre los seis cruces posibles de los cuatro índices.</p>
 </section>
@@ -249,9 +249,9 @@
 <section id="conclusiones" style="max-width: 1100px; margin: 0 auto; padding: 36px 24px 64px;">
   <h2 class="rd-h2" style="font-size: 30px; margin: 0 0 4px;">Conclusiones</h2>
   <div style="width: 60px; height: 1px; background: #c3aa7c; margin: 0 0 20px;"></div>
-  <p>El diagnóstico de Ribera de Arriba no cierra en un solo sentido. El territorio pierde: casi una cuarta parte de la superficie muestra señal de pérdida de vegetación leñosa entre 2018 y 2026, con un avance paralelo del suelo construido concentrado en torno a los ejes viarios y los núcleos habitados. Pero ese mismo diagnóstico también señala dónde está el margen de maniobra — 333 parches de buena aptitud agrológica hoy sin uso, y una infraestructura verde protegida que puede servir de base real, no solo simbólica, para cualquier estrategia de recuperación. Encontrar ese margen no es casualidad: es lo que permite un sistema como TERRA, que cruza automáticamente capas que, por separado, nunca habrían revelado la misma oportunidad.</p>
-  <p>La fragmentación parcelaria (más de 6.400 parcelas, casi la mitad por debajo de 0,1 hectáreas) y los 25 focos de uso incompatible detectados dentro de zonas protegidas marcan los puntos donde la planificación tiene trabajo pendiente: no como advertencia genérica, sino como localización concreta, verificable capa a capa. La síntesis cruzada de los cuatro índices espectrales confirma que el cambio más relevante no está disperso, sino concentrado en un corredor identificable del concejo, lo que convierte esta lectura en una herramienta de priorización y no solo de constatación.</p>
-  <p>En conjunto, el concejo conserva una base territorial con margen de recuperación real si se actúa sobre las zonas ya señaladas, antes de que la tendencia observada entre 2018 y 2026 se consolide.</p>
+  <p>El diagnóstico de Ribera de Arriba no cierra en un solo sentido. El territorio muestra señales de deterioro: una cuarta parte de la superficie presenta descenso de NBR y una quinta parte descenso de NDVI entre dos veranos (2018 y 2026), una señal que la serie de nueve años sitúa en 2025 y 2026 y que se lee como estrés estival a verificar, no como pérdida confirmada. Pero ese mismo diagnóstico también señala dónde está el margen de maniobra — 333 parches de buena aptitud agrológica hoy sin uso, y una infraestructura verde protegida que puede servir de base real, no solo simbólica, para cualquier estrategia de recuperación. Encontrar ese margen no es casualidad: es lo que permite un sistema como TERRA, que cruza automáticamente capas que, por separado, nunca habrían revelado la misma oportunidad.</p>
+  <p>La fragmentación parcelaria (más de 6.400 parcelas, casi la mitad por debajo de 0,1 hectáreas) y los 25 focos de uso incompatible detectados dentro de zonas protegidas marcan los puntos donde la planificación tiene trabajo pendiente: no como advertencia genérica, sino como localización concreta, verificable capa a capa. La síntesis cruzada de los cuatro índices espectrales sugiere que la señal más relevante no está dispersa, sino concentrada en un corredor identificable del concejo, lo que convierte esta lectura en una herramienta de priorización y no solo de constatación.</p>
+  <p>En conjunto, el concejo conserva una base territorial con margen de recuperación real si se actúa sobre las zonas ya señaladas, antes de que las señales observadas se confirmen o se disipen.</p>
   <p>Este conjunto de mapas y datos no es un punto final, sino la base de trabajo: a partir de él, TERRA SISTEMA construye el análisis DAFO y CAME del concejo y un informe técnico en PDF centrado en las necesidades reales del territorio y en las líneas de actuación prioritarias que se derivan del diagnóstico. Todo el proceso está supervisado por mí, graduada en Historia por la Universidad de Oviedo y Máster en Recursos Territoriales y Estrategias de Ordenación (Universidad de Oviedo / Universidad de Cantabria), lo que garantiza que cada resultado se contrasta con criterio experto antes de llegar al informe final.</p>
 </section>
 <div style="max-width: 200px; margin: 8px auto 0; text-align: center; color: #c3aa7c; font-size: 20px;">❦</div>
